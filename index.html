@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <!-- Rating state -->
+      <div class="rating-card card">
+        <img class="icon" src="/images/icon-star.svg" alt="star cartoon" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <fieldset class="rates">
+          <div>
+            <input
+              class="rates-checkbox"
+              type="radio"
+              name="rates-checkbox"
+              id="rate-1"
+              value="1"
+            />
+            <label class="rates-btn" for="rate-1">1</label>
+          </div>
+
+          <div>
+            <input
+              class="rates-checkbox"
+              type="radio"
+              name="rates-checkbox"
+              id="rate-2"
+              value="2"
+            />
+            <label class="rates-btn" for="rate-2">2</label>
+          </div>
+
+          <div>
+            <input
+              class="rates-checkbox"
+              type="radio"
+              name="rates-checkbox"
+              id="rate-3"
+              value="3"
+            />
+            <label class="rates-btn" for="rate-3">3</label>
+          </div>
+          <div>
+            <input
+              class="rates-checkbox"
+              type="radio"
+              name="rates-checkbox"
+              id="rate-4"
+              value="4"
+            />
+            <label class="rates-btn" for="rate-4">4</label>
+          </div>
+
+          <div>
+            <input
+              class="rates-checkbox"
+              type="radio"
+              name="rates-checkbox"
+              id="rate-5"
+              value="5"
+            />
+            <label class="rates-btn" for="rate-5">5</label>
+          </div>
+        </fieldset>
+        <button class="submit-btn" type="submit">SUBMIT</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

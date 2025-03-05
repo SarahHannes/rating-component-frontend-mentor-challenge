@@ -1,0 +1,13 @@
+
+- separate html for each of the pages?
+    - have submit button link to the thank you page using method='post' after user click the submit button
+        - js: addeventlistener on submit button --> load the other page
+        - ref: https://programminghead.com/submit-button-redirect-to-another-page-in-html
+        - ref: https://stackoverflow.com/questions/44221250/redirecting-to-a-page-after-submitting-form-in-html
+
+- same html for both page
+    - on submit, hide the other div
+    - use grid area
+    - on submit, toggle hidden class
+
+- another idea = use js to show --> innerhtml on submit

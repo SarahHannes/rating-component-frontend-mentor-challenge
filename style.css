@@ -1,0 +1,149 @@
+/* ---------- Reset ---------- */
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+/* ---------- Colors ---------- */
+:root {
+  --orange: #fb7413;
+  --white: #ffffff;
+  --light-grey: #959eac;
+  --dark-blue: #252d37;
+  --very-dark-blue: #121417;
+  --button-bg: rgba(149, 158, 172, 0.2);
+}
+
+/* ---------- Styling ---------- */
+
+body {
+  width: 375px;
+  height: 100%;
+  margin: 30% auto;
+
+  background-color: var(--very-dark-blue);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card {
+  margin: 0 5% 30px 5%;
+  padding: 30px;
+  background-color: var(--dark-blue);
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+/* Rating card */
+.rating-card {
+  .icon {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: var(--button-bg);
+  }
+
+  p {
+    margin: 15px 0 20px 0;
+    line-height: 1.5rem;
+    color: var(--light-grey);
+  }
+
+  .rates {
+    display: flex;
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  .rates-btn {
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: var(--button-bg);
+    border: none;
+    color: white;
+    font-weight: 700;
+  }
+
+  .submit-btn {
+    background-color: var(--orange);
+    width: 100%;
+    padding: 12px 0;
+
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    border-radius: 80px;
+    border: none;
+  }
+}
+
+input {
+  height: 0;
+  width: 0;
+}
+
+.rates-btn:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+  background-color: var(--orange);
+}
+
+.rates-checkbox:checked ~ .rates-btn {
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+  background-color: white;
+}
+
+/* Thank you card */
+.thank-you-card {
+  text-align: center;
+
+  .rating-summary {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    color: var(--orange);
+    border-radius: 20px;
+    background-color: var(--button-bg);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+  p {
+    margin: 15px 0 20px 0;
+    line-height: 1.5rem;
+    color: var(--light-grey);
+  }
+}
+
+.debug {
+  /* outline: 1px solid red; */
+  outline: none;
+}
+
+@media screen and (min-device-width: 1440px) {
+  body {
+    width: 450px;
+    height: 100%;
+    overflow: hidden;
+    margin: 100px auto;
+  }
+}
