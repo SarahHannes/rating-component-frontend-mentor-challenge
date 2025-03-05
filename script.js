@@ -19,7 +19,7 @@ submitBtn.addEventListener("click", function () {
     body.innerHTML = `
         <div class="thank-you-card card">
             <div class="icon">
-            <img src="/images/illustration-thank-you.svg" alt="mobile cartoon" />
+            <img src="images/illustration-thank-you.svg" alt="mobile cartoon" />
             </div>
             <div class="rating-summary">You selected ${userRate} out of 5</div>
             <h2>Thank you!</h2>
